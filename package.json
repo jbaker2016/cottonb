@@ -20,6 +20,7 @@
     "next-sanity": "^5.5.8",
     "react": "^18",
     "react-dom": "^18",
+    "react-slideshow-image": "^4.3.0",
     "stripe": "^14.2.0",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7",
