@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="flex w-full justify-center py-2 text-primary my-4">
                 <Link href={'/about-us'} className="px-6">About us</Link>
                 <span>|</span>
-                <Link href={'/'} className="px-6">Contact us</Link>
+                <Link href={'/contact-us'} className="px-6">Contact us</Link>
             </div>
 
             <div className="flex w-full justify-center py-2 text-primary my-4">
