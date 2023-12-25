@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Hero from "./components/Hero";
 import Newest from "./components/Newest";
+import BenefitsList from "./components/BenefitsList";
 
 export const dynamic = "force-dynamic";
 
@@ -9,6 +9,7 @@ export default function Home() {
     <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
       <Hero />
       <Newest />
+      <BenefitsList />
     </div>
   );
 }

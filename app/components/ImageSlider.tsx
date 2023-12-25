@@ -10,15 +10,13 @@ import { Fade, Slide } from "react-slideshow-image";
 
 export default function ImageSlider( data: any) {
 
-  //  console.log(data.data[0].image)
-
   return (
     <div className="h-full w-full object-cover object-center">
 
         <Slide>
             {data.data.map((datas: any, idx: number) => (
                 <div key={idx} className="flex items-center justify-center">
-                    <img src={urlFor(data.data[idx].image).url()} alt="" />
+                    <img src={urlFor(data.data[idx].image).url()} alt="Hero Image" />
                 </div>
             ))}
         </Slide>
