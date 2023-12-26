@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export default function AboutUs() {
 
     return(
-      <form className="mx-auto max-w-3xl mt-8">
+      <form className="mx-auto max-w-3xl mt-8 px-4">
         <label>Name</label>
         <input type="text" name="user_name" />
         <label>Email</label>
