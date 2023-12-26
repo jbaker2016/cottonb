@@ -8,8 +8,9 @@ import { useShoppingCart } from "use-shopping-cart";
 
 const links = [
   { name: "Home", href: "/" },
-  { name: "Men", href: "/category/Men" },
-  { name: "Women", href: "/category/Women" },
+  { name: "Catalog", href: "/catalog" },
+  { name: "About us", href: "/about-us" },
+  { name: "Contact us", href: "/contact-us" },
 ];
 
 export default function Navbar() {
@@ -25,21 +26,11 @@ export default function Navbar() {
         <nav className="hidden gap-12 lg:flex 2xl:ml-16">
           {links.map((link, idx) => (
             <div key={idx}>
-              {pathname === link.href ? (
-                <Link
-                  className="text-lg font-semibold text-primary"
+               <Link
                   href={link.href}
-                >
+                  className="text-lg font-semibold text-gray-600 transition duration-100 hover:underline text-xl">
                   {link.name}
                 </Link>
-              ) : (
-                <Link
-                  href={link.href}
-                  className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-primary"
-                >
-                  {link.name}
-                </Link>
-              )}
             </div>
           ))}
         </nav>

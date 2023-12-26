@@ -24,13 +24,14 @@ export default async function Hero() {
             Fashion for all ocassions with comfort!
           </h1>
           <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">
-            We sell only the most exclusive and high quality cotton clothing products for you, so come and shop with us.
+            We sell only the most exclusive and high quality cotton clothing products just for you.
           </p>
         </div>
 
-        <div className="mb-4 px-8 flex w-full  md:mb-0 lg:w-2/3">
+        <Link href="/category/Women" className="mb-4 px-8 flex w-full  md:mb-0 lg:w-2/3">
+          
           <ImageSlider data={data} />
-        </div>
+        </Link>
       </div>
 
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row">

@@ -33,7 +33,7 @@ export default function ProductsList({params}: any) {
 
     return(
         <div>
-            <div className="flex items-center justify-between my-10">
+            <div className="flex items-center justify-center my-10">
                 <div className="flex h-10 divide-x overflow-hidden rounded-lg border">
 
                 {subcategories.map((subcategory: any) => (
@@ -83,7 +83,5 @@ export default function ProductsList({params}: any) {
             ))}
             </div>
         </div>
-
-
     )
 }
