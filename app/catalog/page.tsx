@@ -35,7 +35,7 @@ export default async function CategoryPage() {
           </h2>
         </div>
         
-        <div className="flex items-center justify-between my-10">
+        <div className="flex items-center justify-center my-10">
                 <div className="flex h-10 divide-x overflow-hidden rounded-lg border">
 
                 <Link
@@ -66,13 +66,10 @@ export default async function CategoryPage() {
                 />
               </div>
 
-
-
-
               <div className="mt-4 flex justify-between">
                 <div>
                   <h3 className="text-sm text-gray-700">
-                    <Link href={`/product/${product.slug}`}>
+                    <Link className="text-lg hover:underline" href={`/product/${product.slug}`}>
                       {product.name}
                     </Link>
                   </h3>

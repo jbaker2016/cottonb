@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function OurStory() {
 
     return(
-        <div className="items-center justify-between mx-auto max-w-2xl px-6 lg:max-w-7xl my-8">
+        <div className="items-center justify-between mx-auto my-16 max-w-2xl px-6 lg:max-w-7xl my-8">
           
           
             

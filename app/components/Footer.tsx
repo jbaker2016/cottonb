@@ -5,16 +5,17 @@ import Link from "next/link";
 
 export default function Footer() {
 
-    const logosize = 45;
+    const logosize = 30;
 
     return(
 
-        <div className="bg-gray-200 mt-16">
+        <div className="bg-gray-100 mt-auto">
+
             <div className="mx-auto max-w-7xl">
-                <div className="flex w-full justify-center py-2 text-gray-900 text-2xl pt-8">
-                    <Link href={'/contact-us'} className="px-6">Contact us</Link>
+                <div className="flex w-full justify-center py-2 text-gray-700  text-xl pt-8">
+                    <Link href={'/contact-us'} className="px-6 hover:underline">Contact us</Link>
                     <span>|</span>
-                    <Link href={'/about-us'} className="px-6">About us</Link>
+                    <Link href={'/about-us'} className="px-6 hover:underline">About us</Link>
                 </div>
 
                 <div className="flex w-full justify-center py-2 text-gray-500 pb-8">
@@ -43,10 +44,10 @@ export default function Footer() {
                     </Link>
                 </div>
 
-                <hr className="border-gray-500"/>
+                <hr className="border-gray-300"/>
 
                 <div className="text-center">
-                        <div className="text-gray-500 py-8 text-lg">Developed By <Link className="text-gray-900" href={'https://www.google.com/'}>JB Web Designs</Link>
+                        <div className="text-gray-500 py-8 text-lg">Developed By <Link className="text-gray-900 hover:underline" href={'https://www.google.com/'}>JB Web Designs</Link>
                             <br />
                             Copyright © 2023
                         </div>
