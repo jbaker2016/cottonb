@@ -2,16 +2,18 @@ import Link from "next/link";
 import { simplifiedProduct } from "./../interface";
 import { client } from "./../lib/sanity";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
-async function getData(cateogry: string) {
-  const query = `*[_type == "product" && category->name == "${cateogry}"] {
-        _id,
-          "imageUrl": images[0].asset->url,
-          price,
-          name,
-          "slug": slug.current,
-          "categoryName": category->name
-      }`;
+async function getData() {
+  const query = `*[_type == "product"] {
+    _id,
+      "imageUrl": images[0].asset->url,
+      price,
+      name,
+      "slug": slug.current,
+      "categoryName": category->name,
+      "subcategoryName": subcategory->name
+  }`;
 
   const data = await client.fetch(query);
 
@@ -20,22 +22,37 @@ async function getData(cateogry: string) {
 
 export const dynamic = "force-dynamic";
 
-export default async function CategoryPage({
-  params,
-}: {
-  params: { category: string };
-}) {
-  const data: simplifiedProduct[] = await getData(params.category);
+export default async function CategoryPage() {
+  
+  const data: simplifiedProduct[] = await getData();
 
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 sm:px-6  lg:max-w-7xl lg:px-8">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-            Our Products for {params.category}
+            All products
           </h2>
         </div>
+        
+        <div className="flex items-center justify-between my-10">
+                <div className="flex h-10 divide-x overflow-hidden rounded-lg border">
 
+                <Link
+                    className="flex items-center mb-0 px-4 justify-center text-gray-500 transition duration-100 bg-white hover:bg-gray-100 active:bg-gray-200"
+                    href="/category/Men">
+                    Men
+                </Link>
+
+                <Link
+                    className="flex items-center mb-0 px-4 justify-center text-gray-500 transition duration-100 bg-white hover:bg-gray-100 active:bg-gray-200"
+                    href="/category/Women">
+                    Women
+                </Link>
+
+
+                </div>
+            </div>
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {data.map((product) => (
             <div key={product._id} className="group relative">
@@ -48,6 +65,9 @@ export default async function CategoryPage({
                   height={300}
                 />
               </div>
+
+
+
 
               <div className="mt-4 flex justify-between">
                 <div>
