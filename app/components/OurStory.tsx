@@ -11,11 +11,11 @@ export default function OurStory() {
 
                 
 
-                <div className="mb-4 px-8 flex w-full lg:w-1/3">
+                <div className="mb-4 px-16 flex w-full lg:w-1/2">
                     <img src="../cotton_b_2.png" alt="Logo" />
                 </div>
 
-                <div className="mb-4 pl-16 flex-col w-full w-full lg:w-2/3">
+                <div className="mb-4 flex-col w-full w-full lg:w-1/2">
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900 ">
                         Our Story
                     </h2>
