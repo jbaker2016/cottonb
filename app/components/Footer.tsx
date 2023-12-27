@@ -47,7 +47,7 @@ export default function Footer() {
                 <hr className="border-gray-300"/>
 
                 <div className="text-center">
-                        <div className="text-gray-500 py-8 text-lg">Developed By <Link className="text-gray-900 hover:underline" href={'https://www.google.com/'}>JB Web Designs</Link>
+                        <div className="text-gray-500 py-8 text-lg">Developed By <Link className="text-gray-900 hover:underline" href={'https://www.google.com/'}>Elephant Edge Web Designs</Link>
                             <br />
                             Copyright © 2023
                         </div>

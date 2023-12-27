@@ -75,8 +75,8 @@ export default function ProductsList({params}: any) {
                         {product.categoryName}
                     </p>
                     </div>
-                    <p className="text-sm font-medium text-gray-900">
-                    ${product.price}
+                    <p className="text-md pl-4 font-medium text-gray-900">
+                    ${product.price?.toFixed(2)}
                     </p>
                 </div>
                 </div>
