@@ -44,7 +44,7 @@ export default function AboutUs() {
               Our Mission
             </h2>
             <p className="mt-4 text-lg">
-              At Cottons B, our approach to fashion is unique and intelligent, combining style, comfort, and clean lines for a smooth and effortless look that's accessible to everyone.
+              At Cottons B, our approach to fashion is unique and intelligent, combining style, comfort, and clean lines for a smooth and effortless look that&#8217;s accessible to everyone.
             </p>
           </div>
       </div>
