@@ -37,14 +37,12 @@ export default function ProductsList({params}: any) {
                 <div className="flex h-10 divide-x overflow-hidden rounded-lg border">
 
                 {subcategories.map((subcategory: any) => (
-
-                <Button
-                    key = {subcategory}
-                    onClick={() => selectSubCategory(subcategory)}
-                    className="flex items-center mb-0 justify-center text-gray-500 transition duration-100 bg-white hover:bg-gray-100 active:bg-gray-200">
-                    {subcategory}
-                </Button>
-
+                    <Button
+                        key = {subcategory}
+                        onClick={() => selectSubCategory(subcategory)}
+                        className="flex items-center mb-0 justify-center text-gray-500 transition duration-100 bg-white hover:bg-gray-100 active:bg-gray-200">
+                        {subcategory}
+                    </Button>
                 ))}
 
                 </div>

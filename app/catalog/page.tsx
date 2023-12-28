@@ -36,23 +36,20 @@ export default async function CategoryPage() {
         </div>
         
         <div className="flex items-center justify-center my-10">
-                <div className="flex h-10 divide-x overflow-hidden rounded-lg border">
+          <div className="flex h-10 divide-x overflow-hidden rounded-lg border">
+            <Link
+                className="flex items-center mb-0 px-4 justify-center text-gray-500 transition duration-100 bg-white hover:bg-gray-100 active:bg-gray-200"
+                href="/category/Men">
+                Men
+            </Link>
 
-                <Link
-                    className="flex items-center mb-0 px-4 justify-center text-gray-500 transition duration-100 bg-white hover:bg-gray-100 active:bg-gray-200"
-                    href="/category/Men">
-                    Men
-                </Link>
-
-                <Link
-                    className="flex items-center mb-0 px-4 justify-center text-gray-500 transition duration-100 bg-white hover:bg-gray-100 active:bg-gray-200"
-                    href="/category/Women">
-                    Women
-                </Link>
-
-
-                </div>
-            </div>
+            <Link
+                className="flex items-center mb-0 px-4 justify-center text-gray-500 transition duration-100 bg-white hover:bg-gray-100 active:bg-gray-200"
+                href="/category/Women">
+                Women
+            </Link>
+          </div>
+        </div>
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {data.map((product) => (
             <div key={product._id} className="group relative">
