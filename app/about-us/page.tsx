@@ -13,7 +13,7 @@ export default function AboutUs() {
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 ">
                 Our Story
             </h2>
-            <p className="mt-4 text-lg">
+            <p className="mt-4 text-lg text-justify">
             Welcome to our page. I&#8217;m Nidhi Suthar, co-founder of Cottons B. Born in India, I&#8217;ve called the US home for over a decade. Passionate about pure organic cotton, I started Cottons B with my husband to raise awareness. Did you know your clothes can harm your health? We introduce you to a brand that cares about how clothing makes you feel!  We&#8217;re on a mission to shift the fashion industry towards comfort and well-being. Each piece is carefully designed and custom-made for you. Join us in wearing clothes that feel good and do good!
             </p>
           </div>
@@ -28,7 +28,7 @@ export default function AboutUs() {
             <h2 className="text-2xl mt-16 font-bold tracking-tight text-gray-900 ">
               Our Vision
             </h2>
-            <p className="mt-4 text-lg">
+            <p className="mt-4 text-lg text-justify">
               Cottons B envisions a world where people wear comfortable, organic cotton clothing that makes them feel confident and at their best, while promoting sustainability and well-being for all. 
             </p>
           </div>   
@@ -43,7 +43,7 @@ export default function AboutUs() {
             <h2 className="text-2xl mt-16 font-bold tracking-tight text-gray-900 ">
               Our Mission
             </h2>
-            <p className="mt-4 text-lg">
+            <p className="mt-4 text-lg text-justify">
               At Cottons B, our approach to fashion is unique and intelligent, combining style, comfort, and clean lines for a smooth and effortless look that&#8217;s accessible to everyone.
             </p>
           </div>

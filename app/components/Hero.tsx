@@ -26,26 +26,22 @@ export default async function Hero() {
           <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">
             We sell only the most exclusive and high quality cotton clothing products just for you.
           </p>
-
-        <div className="flex h-12 w-64 mt-4 divide-x overflow-hidden rounded-lg border">
-          <Link
-            href="/category/Men"
-            className="flex w-1/2 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
-          >
-            Men
-          </Link>
-          <Link
-            href="/category/Women"
-            className="flex w-1/2 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
-          >
-            Women
-          </Link>
+        <div className="w-full mt-4 flex justify-center">
+          <div className="flex h-12 w-64 divide-x overflow-hidden rounded-lg border">
+            <Link
+              href="/category/Men"
+              className="flex w-1/2 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200">
+                Men
+            </Link>
+            <Link
+              href="/category/Women"
+              className="flex w-1/2 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200">
+                Women
+            </Link>
+          </div>
         </div>
-
-        </div>
-
+      </div>
         <div className="mb-4 px-8 flex w-full  md:mb-0 lg:w-2/3">
-          
           <ImageSlider data={data} />
         </div>
       </div>
