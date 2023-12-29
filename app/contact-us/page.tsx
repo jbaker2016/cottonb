@@ -14,7 +14,7 @@ export default function ContactUs() {
         <input type="email" name="user_email" />
         <label>Message</label>
         <textarea name="message" />
-        <input type="submit" value="Send" className="text-gray-300 transition duration-100 hover:bg-gray-100 active:bg-gray-200" />
+        <input type="submit" value="Send" className="text-gray-600 transition duration-100 hover:bg-gray-100 active:bg-gray-200" />
       </form>
   );
 }
