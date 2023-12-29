@@ -13,6 +13,7 @@ export default function CartProvider({ children }: { children: ReactNode }) {
       cancelUrl="https://cotton-b.vercel.app/stripe/error"
       currency="USD"
       billingAddressCollection={false}
+      allowedCountries={["US"]}
       shouldPersist={true}
       language="en-US"
     >

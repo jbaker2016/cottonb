@@ -1,6 +1,10 @@
-import { Button } from "@/components/ui/button";
 
-export default function AboutUs() {
+
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+export default function ContactUs() {
+
 
     return(
       <form className="mx-auto max-w-3xl mt-8 px-4">
@@ -10,7 +14,9 @@ export default function AboutUs() {
         <input type="email" name="user_email" />
         <label>Message</label>
         <textarea name="message" />
-        <Button type="submit" value="Send" >Submit</Button>
+        <input type="submit" value="Send" className="text-gray-300 transition duration-100 hover:bg-gray-100 active:bg-gray-200" />
       </form>
-    )
+  );
 }
+
+
