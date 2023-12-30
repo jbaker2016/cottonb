@@ -28,7 +28,7 @@ export default function Navbar() {
             <div key={idx}>
                <Link
                   href={link.href}
-                  className="text-lg font-semibold text-gray-600 transition duration-100 hover:underline text-xl">
+                  className="text-lg font-semibold text-gray-900 transition duration-100 hover:underline text-xl">
                   {link.name}
                 </Link>
             </div>

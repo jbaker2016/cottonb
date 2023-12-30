@@ -16,7 +16,9 @@ async function getData(cateogry: string) {
           name,
           "slug": slug.current,
           "categoryName": category->name,
-          "subcategoryName": subcategory->name
+          "subcategoryName": subcategory->name,
+          description,
+          price_id
       }`;
 
   const data = await client.fetch(query);

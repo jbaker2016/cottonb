@@ -3,6 +3,7 @@ import { simplifiedProduct } from "../interface";
 import { client } from "../lib/sanity";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import AddToCart from "../components/AddToCart";
 
 async function getData() {
   const query = `*[_type == "product"] {
@@ -10,9 +11,11 @@ async function getData() {
       "imageUrl": images[0].asset->url,
       price,
       name,
+      description,
       "slug": slug.current,
       "categoryName": category->name,
-      "subcategoryName": subcategory->name
+      "subcategoryName": subcategory->name,
+      price_id
   }`;
 
   const data = await client.fetch(query);
@@ -74,9 +77,21 @@ export default async function CategoryPage() {
                     {product.categoryName}
                   </p>
                 </div>
-                <p className="text-md pl-4 font-medium text-gray-900">
-                  ${product.price?.toFixed(2)}
-                </p>
+                <div className="flex flex-col text-right justify-between">
+                        <p className="text-md pl-4 font-medium text-gray-900">
+                        ${product.price?.toFixed(2)}
+                        </p>
+
+                        <AddToCart
+                            currency="USD"
+                            description={product.description}
+                            image={product.imageUrl}
+                            name={product.name}
+                            price={product.price}
+                            key={product._id}
+                            price_id={product.price_id}
+                        />
+                    </div>
               </div>
             </div>
           ))}

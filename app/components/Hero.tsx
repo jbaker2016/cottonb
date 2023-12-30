@@ -19,7 +19,7 @@ export default async function Hero() {
   return (
     <section className="mx-auto my-16 max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8">
       <div className="mb-8 flex flex-wrap justify-between">
-        <div className="mb-8 flex w-full flex-col justify-center sm:mb-8 lg:mb-8 lg:w-1/3 lg:pb-0 lg:pt-0">
+        <div className="mb-8 flex w-full flex-col justify-top sm:mb-8 lg:mb-8 lg:w-1/2 lg:pb-0 lg:pt-0">
           <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:mb-8 md:text-6xl">
             Fashion for all ocassions with comfort!
           </h1>
@@ -41,7 +41,7 @@ export default async function Hero() {
           </div>
         </div>
       </div>
-        <div className="mb-4 px-8 flex w-full  md:mb-0 lg:w-2/3">
+        <div className="mb-4 px-8 flex w-full  md:mb-0 lg:w-1/2">
           <ImageSlider data={data} />
         </div>
       </div>

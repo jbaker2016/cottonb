@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import AddToCar from "./AddToCart";
+import AddToCart from "./AddToCart";
 
 export default function ProductsList({params}: any) {
 
@@ -73,9 +75,22 @@ export default function ProductsList({params}: any) {
                         {product.categoryName}
                     </p>
                     </div>
-                    <p className="text-md pl-4 font-medium text-gray-900">
-                    ${product.price?.toFixed(2)}
-                    </p>
+                    <div className="flex flex-col text-right justify-between">
+                        <p className="text-md pl-4 font-medium text-gray-900">
+                        ${product.price?.toFixed(2)}
+                        </p>
+
+                        <AddToCart
+                            currency="USD"
+                            description={product.description}
+                            image={product.imageUrl}
+                            name={product.name}
+                            price={product.price}
+                            key={product._id}
+                            price_id={product.price_id}
+                        />
+                    </div>
+                    
                 </div>
                 </div>
             ))}
